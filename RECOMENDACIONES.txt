@@ -1,0 +1,13 @@
+Recomendaciones para la Mejora del Proyecto
+
+-Migración del Almacenamiento de Imágenes a la Nube (AWS S3 / Cloudinary)
+El sistema actual almacena las imágenes de productos de forma local en el servidor (/public/uploads). Para mejorar la escalabilidad y el rendimiento, se sugiere migrar este proceso a un servicio de almacenamiento externo. Esto optimizará el tamaño de los contenedores Docker y permitirá el uso de una CDN para cargas de imagen ultra rápidas.
+
+-Implementación de Autenticación y Roles (NextAuth.js)
+Se recomienda integrar un sistema de autenticación robusto para separar la experiencia del cliente de la del administrador. El uso de NextAuth.js permitiría proteger las rutas de inventario (/admin) y ofrecer a los clientes funciones personalizadas, como un historial de pedidos o una lista de deseos.
+
+-Optimización de la Arquitectura de Datos y SEO
+Aunque se utiliza Prisma 7 para la persistencia, se sugiere añadir tablas para Categorías y Reseñas de Clientes. Asimismo, se recomienda implementar los componentes de Metadata dinámicos de Next.js en las rutas de productos para mejorar el posicionamiento en buscadores (SEO) y la previsualización en redes sociales.
+
+-Automatización de Despliegue (CI/CD)
+Para profesionalizar el ciclo de vida del software, se propone crear un flujo de integración y despliegue continuo (CI/CD) utilizando GitHub Actions. Esto permitiría que cada cambio en el código pase por pruebas automáticas y se despliegue en un servidor de producción de forma segura, manteniendo la integridad de los contenedores Docker.
