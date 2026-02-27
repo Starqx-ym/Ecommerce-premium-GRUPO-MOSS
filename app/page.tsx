@@ -237,11 +237,7 @@ export default function Home() {
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-[10px] uppercase tracking-[0.2em] hover:text-yellow-700 transition">Facebook</a>
               <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-[10px] uppercase tracking-[0.2em] hover:text-yellow-700 transition">TikTok</a>
             </div>
-            <div className="flex space-x-6">
-              <a href="#" className="text-[10px] uppercase tracking-[0.2em] hover:text-yellow-700 transition">Instagram</a>
-              <a href="#" className="text-[10px] uppercase tracking-[0.2em] hover:text-yellow-700 transition">Facebook</a>
-              <a href="#" className="text-[10px] uppercase tracking-[0.2em] hover:text-yellow-700 transition">TikTok</a>
-            </div>
+            
           </div>
           <div>
             <h4 className="font-bold text-xs uppercase tracking-widest mb-6">Explorar</h4>
